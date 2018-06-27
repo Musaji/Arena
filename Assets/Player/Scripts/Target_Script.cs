@@ -9,8 +9,11 @@ public class Target_Script : MonoBehaviour
     public Transform arena_1;
     public Transform arena_2;
     public Transform arena_3;
-	
 
+    private void Start()
+    {
+        Camera_Position_Script.target = player;
+    }
     // Update is called once per frame
     void Update()
     {
