@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*TODO: Add a pillaring mechanic so that if there is an environment object in the path of the projectile, the projectile will
+hit the object and disperse rather than clip through and hit the target.*/
 public class Spell_Attack_Script : MonoBehaviour
 {
     public GameObject spell;
@@ -20,7 +21,6 @@ public class Spell_Attack_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(player.transform);
         if (Input.GetKeyDown(KeyCode.F) && Spell_Collision_Script.spellCast == false)
         {
             print("Generate Spell");
